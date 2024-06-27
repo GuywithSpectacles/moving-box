@@ -26,10 +26,8 @@ document.getElementById('btn').addEventListener('click', function() {
     overlay.style.display = 'flex';
 
     let speedParams = document.getElementById('speedparams').value;
-    console.log(typeof(speedParams));
 
     speedParams = parseInt(speedParams);
-    console.log(typeof(speedParams));
 
     movingSquare(speedParams); // Start moving the square
 });
