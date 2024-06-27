@@ -1,0 +1,157 @@
+input[type="text"]#speedparams {
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    border: 2px solid lightgray; /* Light gray border */
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */;
+    font-size: 16px;
+    transition: all 0.3s ease; /* Smooth transition for effects */
+    outline: none;
+    font-family: 'Pacifico', cursive; /* Apply the Pacifico font */
+    
+}
+
+input[type="text"]#speedparams:focus {
+    border-color: #007BFF; /* Blue border on focus */
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3); /* Blue shadow on focus */
+    transform: scale(1.05); /* Slightly increase size on focus */
+}
+
+button#btn {
+    width: 100px;
+    height: 40px;
+    background-color: lightblue; /* Background color for bubble effect */
+    color: rgb(55, 55, 56); /* Change text color for the speedparams label */
+    font-weight: bold; /* Make the text bold */
+    border: none; /* No border */
+    border-radius: 20px; /* Rounded corners for bubble effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size of the text */
+    transition: all 0.3s ease; /* Smooth transition for effects */
+    outline: none; /* Remove default outline */
+    font-family: 'Pacifico', cursive; /* Apply the Pacifico font */
+}
+
+button#btn:hover {
+    background-color: rgb(116, 146, 156); /* Darker blue on hover */
+}
+
+button#btn:active {
+    background-color: rgb(106, 106, 112);
+    transform: translateY(2px); /* Slight downward shift to simulate button press */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2); /* Inset shadow for pressed effect */;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1919.5px;
+    height: 932px;
+    background-color: rgba(0, 0, 0, 1); /* Semi-transparent black */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure it is on top of other elements */
+    border: 1px solid white; /* Optional: border for the overlay */
+    border-radius: 0; /* Optional: no rounded corners for the overlay */
+    padding: 0px; /* Optional: add padding for better alignment */
+    box-sizing: border-box; /* Ensure padding is included in the total width/height */
+
+}
+
+#square {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0); /* Semi-transparent black */;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*display: none; /* Initially hidden */
+    border: 1px solid white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-sizing: border-box;
+}
+
+/*Whatever tag has this class will be affected by it*/
+
+/* Styling the label with a bubble effect */
+.bubble-label {
+    display: inline-block; /* Ensure label behaves like a block element */
+    padding: 10px 20px; /* Add padding to create the bubble effect */
+    border-radius: 20px; /* Rounded corners */
+    background-color: lightblue; /* Background color for bubble effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-size: 16px;
+    transition: all 0.3s ease; /* Smooth transition for effects */
+    margin-bottom: 8px; /* Margin below the label for spacing */
+    color: black; /* Text color */
+    font-weight: bold; /* Bold text */
+    font-family: 'Pacifico', cursive; /* Apply the Pacifico font */
+    margin-right: 10px;
+}
+
+/* Hover effect for the label */
+.bubble-label:hover {
+    background-color: rgb(116, 146, 156); /* Darker blue on hover */
+}
+
+/* Active (pressed) effect for the label */
+.bubble-label:active {
+    background-color: rgb(106, 106, 112);
+    transform: translateY(2px); /* Slight downward shift to simulate press */
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.2); /* Inset shadow for pressed effect */
+}
+
+/* Styling the header with a bubble effect */
+.bubble-header {
+    /*display: inline-block; /* Ensure header behaves like a block element */
+    padding: 20px 40px; /* Add padding to create the bubble effect */
+    border-radius: 30px; /* Rounded corners */
+    background-color: rgb(117, 158, 117); /* Background color for bubble effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-size: 24px; /* Font size for the header */
+    transition: all 0.3s ease; /* Smooth transition for effects */
+    margin-bottom: 16px; /* Margin below the header for spacing */
+    color: white; /* Text color */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center the text */    
+    font-family: 'Pacifico', cursive; /* Apply the Pacifico font */
+}
+
+/* Hover effect for the header */
+.bubble-header:hover {
+    background-color: mediumseagreen; /* Darker green on hover */
+}
+
+/* Style for the bubble button */
+.bubble-button {
+    width: 100px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0); /* Semi-transparent black */;
+    color: whitesmoke; /* Change text color*/
+    font-weight: bold; /* Make the text bold */
+    border: 1px solid white; /* border */
+    border-radius: 20px; /* Rounded corners for bubble effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size of the text */
+    transition: all 0.3s ease; /* Smooth transition for effects */
+    outline: none; /* Remove default outline */
+    font-family: 'Pacifico', cursive; /* Apply the Pacifico font */
+    margin-top: 800px;
+}
+
+.bubble-button:hover {
+    background-color: rgba(0, 0, 0, 0); /* Semi-transparent black */;
+}
+
+.bubble-button:active {
+    background-color: rgba(0, 0, 0, 0); /* Semi-transparent black */;
+    transform: translateY(2px); /* Slight downward shift to simulate button press */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2); /* Inset shadow for pressed effect */
+}
+
